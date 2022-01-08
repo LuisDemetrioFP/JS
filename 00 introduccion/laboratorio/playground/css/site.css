@@ -1,0 +1,135 @@
+
+/* Inicio de hoja de estilos y commnents tag hipervitamidaos y algunos demasiado obvios...*/
+
+/* Diseño del cuerpo */
+body {
+    /* Fuente */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Color de fondo */
+    background-color: #caf0f8;
+}
+
+/* Diseño encabezado */
+.hotels-header {
+    /* Alineacion de fuente */
+    text-align: center;
+}
+
+/* Clase para separar las unidades, aunque creo que no deberia hacer falta sin el las unidades no mantienen margen en top y bottom */
+.hotels-space {
+    /* Espacio entre unidades */
+    padding: 20px;
+}
+
+/* Diseño del cuerpo de las unidades */
+.hotels-body {
+    /* Margenes */
+    margin: auto;
+    /* bisel de las esquinas */
+    border-radius:15px;
+    /* Color de fondo de la unidad */
+    background-color: #48cae4;
+    
+}
+
+/* Diseño del interior de las unidades */
+.hotel-item {
+    /* Espacio entre los contenedores interiores */
+    padding: 10px;
+    /* bisel de las esquinas del marco*/
+    border-radius:15px;
+    /* Diseño del marco */
+    border:5px solid #023e8a;
+    /* Comportamiento del diseño */
+    display:flex;
+    /* Alineacion de los parrafos */
+    justify-content:space-between;
+}
+
+/* Diseño del contenedor del nombre del hotel */
+.hotel-name-container {
+    /* Comportamiento del diseño (esta en todos los contenedores para que se posiciones en el centro vertical)*/
+    display: table;
+    /* Anchora maxima del contenedor */
+    max-width: 130px;
+}
+
+/* Diseño del parrafo */
+.hotel-name {
+    /* Transformar la primera letra del texto a mayuscula */
+    text-transform: uppercase;
+    /* Comportamiento del diseño, esta en todos los diseños para poder centralo en top y bottom solo funciona si en el contendor esta en table*/
+    display: table-cell;
+    /* alineacion vertical esta en todos los diseños del texto y solo funciona con los displays de table y table-cell del contenedor y del diseño del parrafo */
+    vertical-align: middle;
+    /* Tamaño del texto, no se si es aceptable esta opcion predeterminada pero me parecio un tamaño adecuado */
+    font-size:x-large;
+    /* Convertir texto a "negrita" elijiendo el tamaño de esta */
+    font-weight: 700;
+    /* Diseño de la fuente */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Color de la fuente */
+    color: #073b4c;  
+    }
+
+/* Contenedor de la imagen */
+.img-container{
+    display: table;
+    /* Marco */
+    border-radius:15px;
+    border:5px solid #0077b6;
+    /* Tamaño de la imagen */
+    width: 250px;
+    height: 200px;
+}
+
+.img-hotel {
+    display: table-cell;
+    vertical-align: middle;
+    /* bisel */
+    border-radius:10px;
+    /* Tamaño de imagen ¿Podria hacerse llamando al tamaño del marco del contendor? */
+    width: 250px;
+    height: 200px;
+}
+
+/* Contenedor parrafo descripcion */
+.hotel-description-container {
+    display: table;
+    /* Anchura "mas adecuada por buscada por la cuenta de la vieja, tiene que existir una opcion mejor" */
+    max-width: 310px;
+}
+
+/* Diseño parrafo descripcion */
+.hotel-description {
+    display: table-cell;
+    vertical-align: middle;
+    /* Tamaño de fuente */
+    font-size: 20px;
+    /* "relleno o negrita de la fuente */
+    font-weight: 300;
+}
+
+/* Contenedor numero de telefono */
+.hotel-telephone-container {
+    display: table;
+    max-width: 300px;
+}
+/* Diseño de numero de telefono */
+.hotel-telephone {
+    display: table-cell;
+    vertical-align: middle;
+    /* Tamaño de fuente */
+    font-size: 32px;
+}
+
+/* Contenedor de estrellas */
+.stars-container {
+    display: table;
+}
+
+/* Diseño de estrellas */
+.stars {
+    display: table-cell;
+    vertical-align: middle;
+}
